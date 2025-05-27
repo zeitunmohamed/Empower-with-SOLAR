@@ -1,0 +1,835 @@
+@import "tailwindcss";
+
+
+/* Navbar container styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  margin-right: auto; /* This ensures logo stays left */
+  transform: translateX(-20px); /* Adjust this value */
+  margin-left: 2px;
+}
+
+.nav-logo img {
+  height: 200px;
+  width: auto;
+  max-height: 150px; /* Consider adding this for responsive */
+}
+
+/* Center navigation links */
+.nav-center {
+  display: flex;
+  gap: 2rem; /* Space between links */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Right-aligned links */
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Link styles */
+.nav-center a, 
+.nav-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-center a:hover, 
+.nav-right a:hover {
+  color: #4CAF50; /* Green color for hover - adjust to match your theme */
+}
+
+/* Mobile menu button - hidden on desktop */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Mobile menu - hidden on desktop */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 1rem;
+  }
+  
+  .nav-center, 
+  .nav-right {
+    display: none;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+.contact-section {
+padding: 4rem 1rem;
+background-color: #f9fafb;
+font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.contact-header {
+text-align: center;
+margin-bottom: 3rem;
+}
+
+.contact-title {
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+font-size: 1rem;
+color: #6b7280;
+}
+
+.contact-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1.5rem;
+margin-bottom: 3rem;
+}
+
+.contact-card {
+background-color: #fff;
+border: 1px solid #e5e7eb;
+border-radius: 0.75rem;
+padding: 1.5rem;
+text-align: center;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.75rem;
+}
+
+.contact-icon {
+width: 32px;
+height: 32px;
+stroke: #2563eb;
+}
+
+.contact-info {
+font-size: 1rem;
+color: #374151;
+}
+
+.contact-form-container {
+background-color: #ffffff;
+padding: 2rem;
+border-radius: 0.75rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-title {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 1.5rem;
+}
+
+.contact-form-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
+
+.contact-form-group {
+display: flex;
+flex-direction: column;
+}
+
+.contact-form-label {
+font-size: 0.95rem;
+font-weight: 500;
+margin-bottom: 0.5rem;
+color: #111827;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+padding: 0.75rem 1rem;
+font-size: 1rem;
+border: 1px solid #d1d5db;
+border-radius: 0.5rem;
+outline: none;
+transition: border 0.3s;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+border-color: #2563eb;
+}
+
+.contact-form-textarea {
+min-height: 120px;
+resize: vertical;
+}
+
+.contact-form-full-width {
+grid-column: span 1;
+}
+
+.contact-form-submit {
+background-color: #2563eb;
+color: white;
+font-size: 1rem;
+padding: 0.75rem 1.25rem;
+border: none;
+border-radius: 0.5rem;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.contact-form-submit:hover {
+background-color: #1e40af;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+.contact-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-form-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form-full-width {
+grid-column: span 2;
+}
+}
+
+
+
+
+
+
+/* Sign Up Section Styles */
+.signup-section {
+display: grid;
+grid-template-columns: 1fr;
+min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+.signup-section {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.signup-hero {
+position: relative;
+padding: 2rem 1rem;
+display: flex;
+align-items: flex-end;
+min-height: 50vh;
+}
+
+@media (min-width: 1024px) {
+.signup-hero {
+min-height: 100vh;
+padding: 4rem 2rem;
+}
+}
+
+.signup-hero-bg {
+position: absolute;
+inset: 0;
+}
+
+.signup-hero-bg img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.signup-hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.signup-hero-content {
+position: relative;
+width: 100%;
+max-width: 36rem;
+margin: 0 auto;
+color: white;
+}
+
+.signup-hero-title {
+font-size: 2rem;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+.signup-hero-title {
+font-size: 2.5rem;
+}
+}
+
+.signup-features {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+@media (min-width: 640px) {
+.signup-features {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.signup-feature-item {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+font-size: 1rem;
+}
+
+.signup-feature-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 1.5rem;
+height: 1.5rem;
+background-color: #3b82f6;
+border-radius: 9999px;
+flex-shrink: 0;
+}
+
+.signup-feature-icon svg {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.signup-form-container {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2rem 1rem;
+}
+
+@media (min-width: 1024px) {
+.signup-form-container {
+padding: 4rem 2rem;
+}
+}
+
+.signup-form-wrapper {
+width: 100%;
+max-width: 28rem;
+}
+
+.signup-form-title {
+font-size: 1.875rem;
+font-weight: 700;
+color: #111827;
+margin-bottom: 0.5rem;
+}
+
+.signup-form-subtitle {
+font-size: 1rem;
+color: #6b7280;
+margin-bottom: 2rem;
+}
+
+.signup-form-subtitle a {
+color: #3b82f6;
+font-weight: 500;
+transition: color 0.2s;
+}
+
+.signup-form-subtitle a:hover {
+color: #2563eb;
+text-decoration: underline;
+}
+
+.signup-form {
+display: flex;
+flex-direction: column;
+gap: 1.25rem;
+}
+
+.signup-form-group {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.signup-form-label {
+font-size: 0.875rem;
+font-weight: 500;
+color: #374151;
+}
+
+.signup-form-input-container {
+position: relative;
+}
+
+.signup-form-input-icon {
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+color: #9ca3af;
+pointer-events: none;
+}
+
+.signup-form-input-icon svg {
+width: 1.25rem;
+height: 1.25rem;
+}
+
+.signup-form-input {
+width: 100%;
+padding: 0.875rem 1rem 0.875rem 2.75rem;
+font-size: 0.875rem;
+color: #111827;
+background-color: #f9fafb;
+border: 1px solid #e5e7eb;
+border-radius: 0.375rem;
+transition: all 0.2s;
+}
+
+.signup-form-input:focus {
+outline: none;
+border-color: #3b82f6;
+background-color: white;
+box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signup-form-submit {
+padding: 0.875rem 1rem;
+font-size: 0.875rem;
+font-weight: 500;
+color: white;
+background: linear-gradient(to right, #d946ef, #3b82f6);
+border: none;
+border-radius: 0.375rem;
+cursor: pointer;
+transition: opacity 0.2s;
+}
+
+.signup-form-submit:hover {
+opacity: 0.9;
+}
+
+.signup-social-buttons {
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+margin-top: 1.5rem;
+}
+
+.signup-social-button {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.75rem;
+padding: 0.875rem 1rem;
+font-size: 0.875rem;
+font-weight: 500;
+color: #374151;
+background-color: white;
+border: 1px solid #e5e7eb;
+border-radius: 0.375rem;
+cursor: pointer;
+transition: all 0.2s;
+}
+
+.signup-social-button:hover {
+background-color: #f9fafb;
+}
+
+.signup-social-icon {
+width: 1.25rem;
+height: 1.25rem;
+}
+
+.signup-google-icon {
+color: #ef4444;
+}
+
+.signup-facebook-icon {
+color: #2563eb;
+}
+
+.signup-footer {
+margin-top: 1.5rem;
+font-size: 0.75rem;
+color: #6b7280;
+}
+
+.signup-footer a {
+color: #3b82f6;
+transition: color 0.2s;
+}
+
+.signup-footer a:hover {
+color: #2563eb;
+text-decoration: underline;
+}
+
+
+
+
+/* Sign In Section Styles */
+.signin-section {
+display: grid;
+grid-template-columns: 1fr;
+min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+.signin-section {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.signin-hero {
+position: relative;
+padding: 2rem 1rem;
+display: flex;
+align-items: flex-end;
+min-height: 50vh;
+}
+
+@media (min-width: 1024px) {
+.signin-hero {
+min-height: 100vh;
+padding: 4rem 2rem;
+}
+}
+
+.signin-hero-bg {
+position: absolute;
+inset: 0;
+}
+
+.signin-hero-bg img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: top;
+}
+
+.signin-hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.signin-hero-content {
+position: relative;
+width: 100%;
+max-width: 36rem;
+margin: 0 auto;
+color: white;
+}
+
+.signin-hero-title {
+font-size: 2rem;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+.signin-hero-title {
+font-size: 2.5rem;
+}
+}
+
+.signin-features {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+@media (min-width: 640px) {
+.signin-features {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.signin-feature-item {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+font-size: 1rem;
+}
+
+.signin-feature-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 1.5rem;
+height: 1.5rem;
+background-color: #3b82f6;
+border-radius: 9999px;
+flex-shrink: 0;
+}
+
+.signin-feature-icon svg {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.signin-form-container {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2rem 1rem;
+}
+
+@media (min-width: 1024px) {
+.signin-form-container {
+padding: 4rem 2rem;
+}
+}
+
+.signin-form-wrapper {
+width: 100%;
+max-width: 28rem;
+}
+
+.signin-form-title {
+font-size: 1.875rem;
+font-weight: 700;
+color: #111827;
+margin-bottom: 0.5rem;
+}
+
+.signin-form-subtitle {
+font-size: 1rem;
+color: #6b7280;
+margin-bottom: 2rem;
+}
+
+.signin-form-subtitle a {
+color: #3b82f6;
+font-weight: 500;
+transition: color 0.2s;
+}
+
+.signin-form-subtitle a:hover {
+color: #2563eb;
+text-decoration: underline;
+}
+
+.signin-form {
+display: flex;
+flex-direction: column;
+gap: 1.25rem;
+}
+
+.signin-form-group {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.signin-form-label {
+font-size: 0.875rem;
+font-weight: 500;
+color: #374151;
+}
+
+.signin-form-input-container {
+position: relative;
+}
+
+.signin-form-input-icon {
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+color: #9ca3af;
+pointer-events: none;
+}
+
+.signin-form-input-icon svg {
+width: 1.25rem;
+height: 1.25rem;
+}
+
+.signin-form-input {
+width: 100%;
+padding: 0.875rem 1rem 0.875rem 2.75rem;
+font-size: 0.875rem;
+color: #111827;
+background-color: #f9fafb;
+border: 1px solid #e5e7eb;
+border-radius: 0.375rem;
+transition: all 0.2s;
+}
+
+.signin-form-input:focus {
+outline: none;
+border-color: #3b82f6;
+background-color: white;
+box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signin-form-forgot {
+font-size: 0.875rem;
+font-weight: 500;
+color: #3b82f6;
+transition: color 0.2s;
+text-align: right;
+}
+
+.signin-form-forgot:hover {
+color: #2563eb;
+text-decoration: underline;
+}
+
+.signin-form-submit {
+padding: 0.875rem 1rem;
+font-size: 0.875rem;
+font-weight: 500;
+color: white;
+background: linear-gradient(to right, #d946ef, #3b82f6);
+border: none;
+border-radius: 0.375rem;
+cursor: pointer;
+transition: opacity 0.2s;
+}
+
+.signin-form-submit:hover {
+opacity: 0.9;
+}
+
+.signin-social-buttons {
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+margin-top: 1.5rem;
+}
+
+.signin-social-button {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.75rem;
+padding: 0.875rem 1rem;
+font-size: 0.875rem;
+font-weight: 500;
+color: #374151;
+background-color: white;
+border: 1px solid #e5e7eb;
+border-radius: 0.375rem;
+cursor: pointer;
+transition: all 0.2s;
+}
+
+.signin-social-button:hover {
+background-color: #f9fafb;
+}
+
+.signin-social-icon {
+width: 1.25rem;
+height: 1.25rem;
+}
+
+.signin-google-icon {
+color: #ef4444;
+}
+
+.signin-facebook-icon {
+color: #2563eb;
+}
+
+.signup-image {
+  width: 100%;
+  max-width: 500px;         /* Limits the image width */
+  height: auto;             /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain;      /* Ensures the full image fits in the container */
+}
+
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Adjust spacing as needed */
+  padding: 2rem;
+}
+
+.mission-card,
+.vision-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.vision-goals {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Stack on small screens */
+  }
+}

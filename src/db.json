@@ -1,0 +1,114 @@
+{
+  "solarData": [
+    {
+      "id": "1",
+      "name": "Monocrystalline Solar Panels",
+      "description": "High-efficiency panels with 20-22% efficiency. Ideal for residential rooftops with limited space. Perfect for home installations where maximum output is needed from a small area.",
+      "bestFor": [
+        "homes",
+        "commercial buildings"
+      ],
+      "powerOutput": "300-400W per panel",
+      "lifespan": "25-30 years",
+      "Price": "ksh5000",
+      "image": "/image.png/image copy 3.png"
+    },
+    {
+      "name": "Polycrystalline Solar Panels",
+      "description": "Cost-effective panels with 15-17% efficiency. Suitable for large-scale agricultural applications like water pumping systems where space isn't a constraint.",
+      "powerOutput": "250-300W per panel",
+      "lifespan": "20-25 years",
+      "Price": "ksh5000",
+      "bestFor": [
+        "farming",
+        "large institutions"
+      ],
+      "image": "/image.png/image copy 7.png",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Thin-Film Solar Panels",
+      "description": "Lightweight and flexible panels with 10-13% efficiency. Excellent for schools and hospitals with curved roofs or irregular surfaces. Low maintenance solution for public institutions.",
+      "bestFor": [
+        "schools",
+        "hospitals",
+        "government buildings"
+      ],
+      "powerOutput": "150-200W per panel",
+      "lifespan": "15-20 years",
+      "Price": "ksh4000",
+      "image": "/image.png/image copy 11.png"
+    },
+    {
+      "id": "5",
+      "name": "Solar Street Lights",
+      "description": "All-in-one lighting systems for public spaces. Automatic dusk-to-dawn operation. Perfect for school campuses, hospital parking lots, and municipal areas.",
+      "bestFor": [
+        "public spaces",
+        "schools",
+        "hospitals"
+      ],
+      "powerOutput": "30-100W per light",
+      "lifespan": "5-8 years",
+      "Price": "ksh3000",
+      "image": "/image.png/image copy 6.png"
+    },
+    {
+      "id": "6",
+      "name": "Solar Microgrid System",
+      "description": "Complete energy independence solution for villages and institutions. Combines solar panels, batteries, and smart controllers. Ensures 24/7 power for critical facilities like hospitals.",
+      "bestFor": [
+        "hospitals",
+        "villages",
+        "community centers"
+      ],
+      "powerOutput": "10kW-1MW systems",
+      "lifespan": "20+ years",
+      "Price": "ksh5000",
+      "image": "/image.png/image copy 4.png"
+    },
+    {
+      "id": "b3e3",
+      "name": "Solar Water Pumping System",
+      "description": "best for farming",
+      "powerOutput": "1-10HP pumps",
+      "lifespan": "10-15 years",
+      "bestFor": [
+        "farming",
+        "large institutions"
+      ],
+      "image": "/image.png/image copy 10.png"
+    }
+  ],
+  "applications": [
+    {
+      "applicantName": "John Doe",
+      "email": "john@example.com",
+      "phone": "0712345678",
+      "residence": "Marsabit",
+      "productId": 2,
+      "id": "d61d"
+    },
+    {
+      "id": "6cb7",
+      "userName": "zeitun hussein",
+      "userEmail": "zeitunmohamed09@gmail.com",
+      "phone": "0720971069",
+      "residence": "Garissa",
+      "productId": "3",
+      "productName": "Thin-Film Solar Panels",
+      "appliedAt": "2025-05-27T18:04:09.745Z"
+    },
+    {
+      "id": "217b",
+      "userName": "shamsy ruwa",
+      "userEmail": "shamsyruwa@gmail.com",
+      "phone": "0757586736",
+      "residence": "Garissa",
+      "productId": "1",
+      "productName": "Monocrystalline Solar Panels",
+      "appliedAt": "2025-05-27T18:20:42.009Z"
+    }
+  ]
+}
